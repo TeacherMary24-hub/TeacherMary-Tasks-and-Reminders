@@ -170,11 +170,8 @@ export const RoutineryView: React.FC = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
             <h2 className="text-2xl font-bold text-slate-800 tracking-tight">
-              Routinery <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-indigo-100/80 border border-indigo-200/50 text-indigo-700 backdrop-blur-xs">Step-by-Step Guided Habits</span>
+              Routinery
             </h2>
-            <p className="text-sm text-slate-500 mt-1">
-              Executes your teacher routines through guided sequential blocks, vocal guidance, and automatic time pacing.
-            </p>
           </div>
 
           <div className="flex items-center space-x-2">

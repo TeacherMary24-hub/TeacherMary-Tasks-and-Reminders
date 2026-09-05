@@ -112,14 +112,8 @@ export const HabitsView: React.FC = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
             <h2 className="text-2xl font-bold text-slate-800 tracking-tight">
-              Habits & Wellness{' '}
-              <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-indigo-100/80 border border-indigo-200/60 text-indigo-700 backdrop-blur-xs">
-                Finch Pet Companion
-              </span>
+              Habits & Wellness
             </h2>
-            <p className="text-sm text-slate-500 mt-1">
-              Nurture your daily wellness and prevent teacher burnout by linking personal habits to Pip the Finch's growth.
-            </p>
           </div>
 
           {/* Rainbow Stones Balance Pill */}
@@ -452,10 +446,7 @@ export const HabitsView: React.FC = () => {
         {activeTab === 'reflection' && (
           <div className="bg-white/50 backdrop-blur-xl rounded-3xl border border-white/60 p-6 sm:p-8 shadow-xl shadow-slate-200/30 max-w-2xl mx-auto space-y-6">
             <div>
-              <h3 className="text-lg font-bold text-slate-800">Teacher Daily Mood & Gratitude Check-In</h3>
-              <p className="text-xs text-slate-500 mt-0.5">
-                Take a moment to pause. Acknowledging small wins protects your teacher joy.
-              </p>
+              <h3 className="text-lg font-bold text-slate-800">Daily Reflection & Mood</h3>
             </div>
 
             {/* Mood selector */}

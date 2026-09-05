@@ -358,9 +358,6 @@ export const TasksView: React.FC = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
             <h2 className="text-2xl font-bold text-slate-800 tracking-tight">Tasks & Action List</h2>
-            <p className="text-sm text-slate-500 mt-1">
-              Organize class materials, grading, meetings, and teacher priorities with smart NLP detection.
-            </p>
           </div>
 
           <div className="flex items-center space-x-2">
@@ -400,9 +397,6 @@ export const TasksView: React.FC = () => {
                     </span>
                   )}
                 </div>
-                <p className="text-[11px] text-slate-500 hidden sm:block">
-                  Click any category pill below to filter your tasks immediately
-                </p>
               </div>
             </div>
 
@@ -535,7 +529,7 @@ export const TasksView: React.FC = () => {
                 type="text"
                 value={inputText}
                 onChange={(e) => setInputText(e.target.value)}
-                placeholder="Type task naturally... e.g. 'Grade essays tomorrow at 2pm #Grading !high at Faculty Room'"
+                placeholder="Add a new task..."
                 className="w-full text-sm sm:text-base font-medium text-slate-800 placeholder-slate-400 focus:outline-none bg-transparent"
               />
               <button
@@ -724,7 +718,7 @@ export const TasksView: React.FC = () => {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
             <div className="flex items-center space-x-2 text-slate-700 font-bold shrink-0">
               <Calendar className="w-4 h-4 text-indigo-600" />
-              <span className="uppercase tracking-wider text-[11px]">Filter By Deadline:</span>
+              <span className="uppercase tracking-wider text-[11px]">Deadline:</span>
               {filterDeadline !== 'all' && (
                 <button
                   onClick={() => setFilterDeadline('all')}
@@ -852,11 +846,6 @@ export const TasksView: React.FC = () => {
             <div className="text-center py-12 bg-white/40 backdrop-blur-xl rounded-2xl border border-white/50 shadow-lg shadow-slate-200/30">
               <CheckCircle2 className="w-12 h-12 text-slate-300 mx-auto mb-2" />
               <p className="text-slate-600 font-semibold">No tasks found</p>
-              <p className="text-xs text-slate-400 mt-1">
-                {filterStatus === 'pending'
-                  ? 'All clear! Great job staying on top of your classroom work.'
-                  : 'Try changing your filters or add a new task.'}
-              </p>
             </div>
           ) : (
             filteredTasks.map((task) => {

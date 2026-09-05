@@ -158,11 +158,8 @@ export const TodayFocusView: React.FC = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
           <div>
             <h2 className="text-2xl font-bold text-slate-800 tracking-tight">
-              Today's Focus <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-indigo-100/80 border border-indigo-200/50 text-indigo-700 backdrop-blur-xs">Pomodoro Hybrid</span>
+              Today's Focus
             </h2>
-            <p className="text-sm text-slate-500">
-              Science-backed interval training combining task progress, strict mode, and soothing ambient soundscapes.
-            </p>
           </div>
 
           {/* Strict Mode Toggle */}
@@ -170,7 +167,6 @@ export const TodayFocusView: React.FC = () => {
             <ShieldAlert className={`w-4 h-4 ${strictMode ? 'text-rose-600' : 'text-slate-400'}`} />
             <div className="text-left">
               <p className="text-xs font-bold text-slate-800">Strict Focus Mode</p>
-              <p className="text-[10px] text-slate-400">Prohibit app exit / tab switch</p>
             </div>
             <button
               onClick={() => {
@@ -421,10 +417,7 @@ export const TodayFocusView: React.FC = () => {
             </div>
             <h3 className="text-2xl font-extrabold text-slate-900">STRICT FOCUS ALERT!</h3>
             <p className="text-sm font-semibold text-slate-700">
-              You switched windows or tried to leave the application!
-            </p>
-            <p className="text-xs text-slate-500">
-              Strict Mode prohibits distractions and tab hopping. Return to your classroom work to preserve your focus streak!
+              You switched windows or left the application.
             </p>
             <button
               onClick={() => {

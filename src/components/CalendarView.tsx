@@ -162,9 +162,6 @@ export const CalendarView: React.FC = () => {
                 </span>
               )}
             </h2>
-            <p className="text-sm text-slate-500 mt-1">
-              Class periods, meetings, deadlines, and school events automatically synchronized with your Google Calendar.
-            </p>
           </div>
 
           <div className="flex flex-wrap items-center gap-2">

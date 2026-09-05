@@ -960,10 +960,7 @@ export const NotesView: React.FC = () => {
                   <div className="w-16 h-16 rounded-2xl bg-indigo-50/80 border border-indigo-100/50 text-indigo-600 flex items-center justify-center mx-auto shadow-xs">
                     <Shield className="w-8 h-8" />
                   </div>
-                  <h3 className="text-lg font-bold text-slate-800">Protected Confidential Note</h3>
-                  <p className="text-xs text-slate-500">
-                    This note is secured with TeacherMary’s passcode / biometric lock.
-                  </p>
+                  <h3 className="text-lg font-bold text-slate-800">Protected Note</h3>
 
                   <form onSubmit={handleUnlockWithPin} className="space-y-3 pt-2">
                     <input
@@ -1394,14 +1391,11 @@ export const NotesView: React.FC = () => {
         <div className="fixed inset-0 bg-slate-900/40 backdrop-blur-md flex items-center justify-center p-4 z-50">
           <div className="bg-white/85 backdrop-blur-2xl rounded-3xl p-6 max-w-md w-full space-y-4 border border-white/60 shadow-2xl">
             <div className="flex items-center justify-between">
-              <h3 className="text-base font-bold text-slate-800">Link Related Note (Wiki &gt;&gt;)</h3>
+              <h3 className="text-base font-bold text-slate-800">Link Note</h3>
               <button onClick={() => setIsLinkModalOpen(false)} className="text-slate-400 font-bold cursor-pointer">
                 ✕
               </button>
             </div>
-            <p className="text-xs text-slate-500">
-              Select a note to connect. This builds an interconnected personal teacher wiki!
-            </p>
             <div className="max-h-60 overflow-y-auto space-y-1">
               {notes
                 .filter((n) => n.id !== currentNote?.id)
@@ -1552,10 +1546,7 @@ export const NotesView: React.FC = () => {
           <div className="bg-white/90 backdrop-blur-2xl rounded-3xl p-6 max-w-lg w-full space-y-4 border border-white/60 shadow-2xl">
             <div className="flex items-center justify-between border-b border-white/40 pb-3">
               <div>
-                <h3 className="text-base font-bold text-slate-800">Customize Note Folders</h3>
-                <p className="text-xs text-slate-500 mt-0.5">
-                  Change folder names, custom colors, and icons
-                </p>
+                <h3 className="text-base font-bold text-slate-800">Note Folders</h3>
               </div>
               <button
                 onClick={() => {

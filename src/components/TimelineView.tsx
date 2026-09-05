@@ -144,11 +144,8 @@ export const TimelineView: React.FC = () => {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
             <h2 className="text-2xl font-bold text-slate-800 tracking-tight">
-              Structured Timeline <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-indigo-100/80 border border-indigo-200/60 text-indigo-700 backdrop-blur-xs">Visual Time-Blocking</span>
+              Timeline
             </h2>
-            <p className="text-sm text-slate-500 mt-1">
-              Merges tasks, calendar periods, and guided routines into a single seamless chronological daily flow.
-            </p>
           </div>
 
           {/* Date Selector */}
