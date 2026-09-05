@@ -1,0 +1,6 @@
+{
+  "name": "TeacherMary's Reminders and Tasks",
+  "description": "A centralized productivity system featuring tasks with subtasks and Pomodoro, rich notes with drawing and attachments, Today's Focus with strict mode, guided habit routines, calendar with Google Calendar sync, visual timeline, and a gamified habit pet.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
